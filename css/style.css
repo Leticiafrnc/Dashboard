@@ -1,0 +1,254 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+html,body{
+height: 100%;	
+background: #faf9fc;
+
+}
+
+.clear{
+	clear: both;
+}
+
+div.sidebar{
+float: left;
+background: #2d3035;
+height: 100%;
+width: 300px;
+
+}
+
+div.topo{
+background: #26282d;
+text-align: center;
+padding: 20px 10px;	
+}
+
+div.topo h3 {
+	color: white;
+}
+div.menu {
+	padding: 30px;
+}
+
+div.menu ul{
+	list-style-type: none;
+}
+
+div.menu li {
+	margin-bottom:20px;
+	font-size: 18px;
+	color: #717171;
+	margin-bottom: 20px;
+	
+}
+
+div.menu li:hover i {
+	transition: 1s;
+	color: #6d3bbb;
+}
+div.menu li:hover a {
+	transition: 1s;
+	color:white;
+}
+
+div.menu ul li a {
+	color: #717171;
+	text-decoration: none;
+	font-size: 19px;
+
+}
+
+div.main-content{
+	float: left;
+	width: calc(100% - 300px);
+	height: 100%;
+
+}
+
+header{
+	height: 90px;
+	background: white;
+	padding: 20px;
+	border-bottom: 2px solid #ccc;
+}
+
+.pesquisa-campo{
+	float: right;
+}
+
+.icone-pesquisa{
+	background:#d6d6d6;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	color: white;
+	display: inline-block;
+	vertical-align: middle;
+	
+
+}
+.pesquisa-campo form{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.icone-pesquisa i {
+	position: relative;
+	top: 5px;
+}
+.pesquisa-campo input[type=text]{
+	width: 200px;
+	height: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	border-left: 0;
+	border-top:1px solid rgb(220,220,220);
+	border-right: 1px solid rgb(220,220,220);
+	border-bottom:1px solid rgb(220,220,220);
+	padding-left: 10px;
+	font-size: 16px;
+}
+
+.pesquisa-campo input[type=text]:focus{
+	outline: 0;
+}
+
+.icone-alerta{
+	cursor: pointer;
+	background: #FBEDEF;
+	width: 30px;
+	height: 30px;
+	margin-right: 28px;
+	float: right;
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+}
+
+.icone-alerta p{
+	position: absolute;
+	left: -8px;
+	top: -8px;
+	display: inline-block;
+	background: #ED7387;
+	color: white;
+	padding:3px;
+	font-size: 12px;
+}
+
+.icone-alerta i{
+	line-height: 30px;
+	font-size: 18px;
+	color: #ED7387;
+	font-weight: bold;
+}
+.content1{
+	float: left;
+	width: 80%;
+	padding:30px;
+	overflow-y: auto;
+	height: calc(100% - 90px);
+}
+
+.nome-usuario{
+	float: left;
+}
+
+.nome-usuario h2{
+	margin-top: 8px;
+	font-weight: normal;
+	font-size: 23px;
+	color:#A7A7A7;
+	cursor: pointer;
+}
+
+.panel{
+	width: 100%;
+	float: left;
+	background: white;
+	border: 2px solid #EBEBEB;
+	padding: 30px;
+
+}
+
+.panel h2{
+	color: #7f7f7f;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+.painel p {
+	font-size: 17px ;
+	color: #b2b2b2;
+	margin-top: 10px;
+}
+
+.ultimas-atividades{
+	width: 20%;
+	background: #EAEBEB;
+	padding: 20px 30px;
+	float: left;
+	height: calc(100% - 90px);
+	overflow-y: auto; 
+
+}
+
+.atividade-registro{
+	position: relative;
+	padding:15px 10px;
+	border-left: 1px solid #BBBBBB;
+
+}
+.atividades-topo h2{
+	color: #7f7f7f;
+	font-size: 23px;
+	border-bottom: 1px solid #ccc;
+	padding: 15px;
+	font-weight: normal;
+}
+
+
+.atividade-registro h2{
+	
+	color: #bbb;
+	font-size:19px;
+	font-weight: normal;
+	
+}
+
+.atividade-resgisto p {
+	color: #b2b2b2;
+	font-size: 15px;
+
+}
+
+.circle-atividade{
+	position: absolute;
+	left: -10px;
+	top:-10px;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	background: #ccc;
+
+}
+
+@media screen and (max-width: 768px)
+{
+	.ultimas-atividades{display: none;}
+	.content1{width: 100%;}
+	.panel{width: 100% !important;}
+	.sidebar{display: none;position: relative;z-index: 9999;}
+	div.main-content{
+		width: 100%;
+		position: absolute;left: 0;top:0;
+	}
+}
